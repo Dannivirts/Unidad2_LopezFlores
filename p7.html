@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda de libros</title>
+</head>
+<body>
+    <form action = "enviar.php" method = "post">
+        <h2>Búsqueda Avanzada de Libros</h2>
+
+        <label for = "titulo">Título del libro: </label>
+        <input type = "text" id = "nombre" name = "nombre" required>
+        <br><br>
+
+        <label for = "autor">Autor: </label>
+        <input type = "text" id = "autor" name = "autor" placeholder = 
+        "Ingrese nombre del autor">
+        <br><br>
+
+        <label for = "genero">Genero: </label>
+        <select id = "genero" name = "genero">
+            <option value = "">Seleccione un genero</option>
+            <option value = "ficcion">Ficción</option>
+            <option value = "fantasia">Fantasía</option>
+            <option value = "romance">Romance</option>
+            <option value = "terror">Terror</option>
+            <option value = "drama">Drama</option>
+        </select>
+        <br><br>
+
+        <label for = "fechaInicio">Fecha de publicación (desde):</label>
+        <input type = "date" id = "fechaInicio" name = "fechaInicio">
+        <br><br>
+
+        <label for = "fechaFin">Fecha de publicación (hasta):</label>
+        <input type = "date" id = "fechaFin" name = "fechaFin">
+        <br><br>
+
+        <label for = "ordenarPor">Ordenar resultados por:</label>
+        <select id = "ordenarPor" name = "ordenarPor">
+            <option value = "">Seleccione una opción</option>
+            <option value = "popularidad">Popularidad</option>
+            <option value = "fecha">Fecha de publicación</option>
+            <option value = "relevancia">Relevancia</option>
+        </select>
+        <br><br>
+
+        <button type = "submit">Buscar libros</button>
+
+    </form>
+    
+</body>
+</html>
