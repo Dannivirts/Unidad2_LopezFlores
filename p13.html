@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No se puede reproducir video</title>
+</head>
+<body>
+    <header>
+        <h1>¿Por qué no deja reproducir video de Youtube?</h1>
+    </header>
+
+    <main>
+        <h1>Existen varias razones: </h1>
+        <p>
+            <ol>
+                <li>Política de seguridad: YouTube no permite la incrustación directa de videos en sitios web externos sin usar su API
+                    o iframe oficial por razones de seguridad y control de derechos de autor.</li>
+                <li>Tecnología compleja: Los videos de YouTube utilizan tecnologías complejas que no se pueden replicar con HTML puro,
+                    como streaming adaptativo, controles personalizados y análisis de datos.</li>
+                <li>Formato de video: YouTube usa formatos de video específicos que requieren un reproductor especializado, que no está
+                    disponible en HTML básico.</li>
+            </ol>
+        </p>
+    </main>
+    
+    <article>
+        <h2>Soluciones</h2>
+        <p>
+            <ol>
+                <li>Usar el iframe oficial de YouTube: Esta es la solución más sencilla y recomendada. YouTube proporciona un código de iframe que
+                    puedes insertar en tu HTML.
+                    Ejemplo:
+                    <pre><code>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VIDEO_ID&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+                    Reemplazar VIDEO_ID con el identificador del video que  se desea reproducir.</li>
+                <li>Utilizar la API de YouTube: Si se necesita más control sobre el reproductor, se puede usar la API de YouTube para JavaScript.
+                    Esto requiere un poco más de código, pero da más flexibilidad.</li>
+                <li>Descargar el video y usar el elemento &lt;video&gt; de HTML5: Esta opción no es recomendada, ya que podría infringir los términos
+                    de servicio de YouTube y las leyes de derechos de autor.</li>
+            </ol>
+        </p>
+        <p>La solución más práctica y ética es usar el iframe proporcionado por YouTube. Es simple de implementar y cumple con todas las políticas
+            y requisitos técnicos de YouTube.</p>
+    </article>
+
+
+</body>
+</html>
