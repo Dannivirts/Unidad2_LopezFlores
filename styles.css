@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Estilo del título principal con rem */
+h1.titulo {
+    font-size: 4rem; /* Relativa al tamaño de la fuente raíz */
+    color: #4b2c50;
+    text-align: center;
+    margin-bottom: 2em; /* Em como unidad relativa */
+}
+
+/* Subtítulos usando unidades absolutas */
+h2.subtitulos {
+    color: #de7b8d;
+    font-size: 24px; /* Píxeles como unidad absoluta */
+    margin-top: 1in; /* Usando pulgadas (in) como separación */
+}
+
+/* Lista ordenada con unidades relativas y absolutas */
+ol {
+    margin-left: 5vw; /* Margen relativo al ancho del viewport */
+    padding: 10px; /* Usando píxeles */
+}
+
+/* Elementos de la lista con tamaño flexible */
+li {
+    font-size: 1.2em; /* Relativo al tamaño del padre */
+    color: #34495e;
+    margin-bottom: 0.5rem; /* Rem como unidad relativa al elemento raíz */
+}
+
+/* Párrafos usando una mezcla de unidades */
+p.parrafos {
+    font-size: 16px; /* Tamaño absoluto en píxeles */
+    margin-bottom: 2vh; /* Margen inferior relativo a la altura del viewport */
+    color: #333;
+}
+
+/* Espaciado adicional entre párrafos */
+p.parrafos + p.parrafos {
+    margin-top: 1cm; /* Usando centímetros */
+}
+
+/* Otros estilos que incluyen más ejemplos de unidades */
+ol li:nth-child(2) {
+    font-size: 1.5rem; /* Rem para un tamaño mayor */
+}
+
+ol li:nth-child(4) {
+    font-size: 18pt; /* Usando puntos (pt) como tamaño absoluto */
+    color: #8e44ad;
+}

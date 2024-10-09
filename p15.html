@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo">Prueba de Unidades de Medida en CSS</h1>
+
+
+    <h2 class="subtitulos">Unidades Absolutas</h2>
+    <p class="parrafos">Las unidades absolutas tienen un valor fijo y no cambian según el contexto. Son útiles para imprimir o situaciones
+        donde se requiere un tamaño específico. Las principales unidades absolutas en CSS son:</p>
+        <ol>
+            <li>px: Píxeles, la unidad más común en diseño web.</li>
+            <li>in: Pulgadas (1 in = 2.54 cm).</li>
+            <li>cm: Centímetros.</li>
+            <li>mm: Milímetros.</li>
+            <li>pt: Puntos (1 pt = 1/72 in ≈ 0.35 mm).</li>
+            <li>pc: Picas (1 pc = 12 pt).</li>
+        </ol>
+    <p class="parrafos">La principal ventaja de las unidades absolutas es su simplicidad; sin embargo, su desventaja es la falta de flexibilidad,
+        ya que no se adaptan a diferentes tamaños de pantalla o resoluciones.</p>
+
+
+    <h2 class="subtitulos">Unidades Relativas</h2>
+    <p>Las unidades relativas dependen del contexto en el que se utilizan, lo que les otorga mayor flexibilidad y adaptabilidad,
+        especialmente en diseño responsivo. Las principales unidades relativas son:</p>
+        <ol>
+            <li>em: Relativa al tamaño de fuente del elemento padre. Por ejemplo, si el tamaño de fuente del padre es 16px, 1em será 16px.</li>
+            <li>rem: Similar a em, pero relativa al tamaño de fuente del elemento raíz (html). Esto permite una mayor consistencia en toda la página.</li>
+            <li>%: Porcentaje del tamaño del elemento padre.</li>
+            <li>ex: Relativa a la altura de la letra "x" minúscula de la fuente actual, aproximadamente la mitad del tamaño de la fuente.</li>
+            <li>vw: Unidades relativas al ancho del viewport (1vw = 1% del ancho total).</li>
+            <li>vh: Unidades relativas a la altura del viewport (1vh = 1% de la altura total).</li>
+            <li>vmin: El menor valor entre vw y vh.</li>
+            <li>vmax: El mayor valor entre vw y vh.</li>
+        </ol>
+    <p class="parrafos">Las unidades relativas son preferidas en diseño web moderno porque permiten que los elementos escalen proporcionalmente con respecto a otros elementos
+        o al viewport, facilitando así un diseño adaptable a diferentes dispositivos.</p>
+
+</body>
+</html>
