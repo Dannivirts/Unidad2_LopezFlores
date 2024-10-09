@@ -1,0 +1,187 @@
+/* ======== estilos generales ======== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== subtitulos ======== */
+.subtitulos {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* ======== header ======== */
+#main-header {
+    padding: 1rem 0; /*relleno*/
+    text-align: center; /*alineacion al centro*/
+}
+
+#store-name .black {
+    color: black; /*parte del titulo color negro*/
+}
+
+#store-name .purple {
+    color: purple; /*parte del titulo color morado*/
+}
+
+/* ======== main navegacion ======== */
+.main-navegacion {
+    background-color: #f8f8f8; /*color de la barra de navegacion*/
+    padding: 0.5rem 0; /*relleno*/
+    border-top: 1px solid #e7e7e7; /*borde superior de la barra gris*/
+    border-bottom: 1px solid #e7e7e7; /*borde inferior de la barra gris*/
+}
+
+.main-navegacion nav { /*estilos solo para lo que contiene nav*/
+    display: flex; /*flexbox para organizar los enlaces*/
+    justify-content: center; /*centrar los enlaces horizontalmente*/
+    gap: 1rem; /*espacio entre los enlaces*/
+}
+
+.main-navegacion a { /*estilos solo de <a>*/
+    color: #333; /*color de los enlaces*/
+    text-decoration: none; /*sin subrayado*/
+    font-weight: normal; /*peso de fuente normal*/
+    padding: 0.5rem 1rem; /*relleno interno de los enlaces, espacio alrededor de ellos*/
+}
+
+.main-navegacion a:hover {
+    text-decoration: underline; /*subrayado al pasar el ratón*/
+
+}
+
+/* ======== categorias de productos ======== */
+#categorias-productos {
+    text-align: center; /*texto dentro de la sección al centro */
+    padding: 2rem;
+}
+
+.contenedor-categorias {
+    display: flex; /*flexbox para organizar las categorias en fila*/
+    justify-content: center; /*centrar categorias*/
+    gap: 2rem; /*espacio entre las categorias*/
+}
+
+.categoria-producto {
+    text-align: center; /*centrar texto e imagen de cada categoria*/
+    max-width: 300px; /*limita el ancho de cada categoria*/
+}
+
+.categoria-producto img {
+    width: 100%; /*para que la imagen ocupe el 100% del ancho del contenedor*/
+    height: 200px; /*altura fija de 200 px para las imágenes */
+    object-fit: cover; /*ajusta la imagen para que cubra completamente el área del contenedor*/
+    border-radius: 15px; /*redondea*/
+}
+
+.categoria-producto h3 {
+    color: #444; /*color das categorias*/
+    margin: 1rem 0; /*margen arriba y abajo del text*/
+}
+
+.categoria-producto a {
+    display: inline-block; /*permite aplicar padding y márgenes al enlace. se ven como un boton*/
+    background-color: #ad75e1;
+    color: white; 
+    padding: 0.5rem 1rem; /*espacio interior de 0.5 rem vertical y 1 rem horizontal alrededor del texto del enlace */
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.categoria-producto a:hover {
+    background-color: #8000b3; /*sombreado cuando pasa raton*/
+}
+
+/* ======== PRODUCTOS DESTACADOS ======== */
+#productos-destacados {
+    text-align: center;
+    padding: 2rem;
+}
+
+.producto-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.producto {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.producto img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.producto button {
+    background-color: #ad75e1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+.producto button:hover {
+    background-color: #8000b3;
+}
+
+/* ======== footer ======== */
+#main-footer {
+    padding: 2rem 0;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.footer-section h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu a {
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-menu a:hover {
+    color: #ad75e1;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e7e7e7;
+    color: #666;
+    font-size: 0.8rem;
+}
